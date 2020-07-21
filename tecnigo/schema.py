@@ -6,10 +6,10 @@ from tecnigo.models import TecnicalSupportStaff
 
 class TecnicalSupportStaffType(DjangoObjectType):
     class Meta:
-        model = Ingredient
+        model = TecnicalSupportStaff 
 
 class Query(object):
-    all_TexnicalSupportStaffType = graphane.List(TecnicalSupportStaffType)
+    all_TexnicalSupportStaffType = graphene.List(TecnicalSupportStaffType)
 
     def resolve_all_TecnicalSupportStaff(self,info, **kwargs):
         return Category.objects.all()
