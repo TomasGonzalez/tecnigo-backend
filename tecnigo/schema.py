@@ -8,9 +8,9 @@ class TecnicalSupportStaffType(DjangoObjectType):
     class Meta:
         model = TecnicalSupportStaff 
 
-class Query(object):
-    all_TexnicalSupportStaffType = graphene.List(TecnicalSupportStaffType)
+class Query(graphene.ObjectType):
+    all_tecnical_support_staff = graphene.List(TecnicalSupportStaffType)
 
-    def resolve_all_TecnicalSupportStaff(self,info, **kwargs):
-        return Category.objects.all()
+    def resolve_all_tecnical_support_staff(self,info, **kwargs):
+        return TecnicalSupportStaff.objects.all()
 
