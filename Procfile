@@ -1,2 +1,2 @@
-web: gunicorn tecnigo-backend.wsgi
+web: gunicorn tecnigoBackend.wsgi
 
