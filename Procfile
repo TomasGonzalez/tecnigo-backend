@@ -1,2 +1,2 @@
-gunicorn tecnigo-backend.wsgi --log-file -
+web: gunicorn tecnigo-backend.wsgi
 
