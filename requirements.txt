@@ -5,7 +5,7 @@ attrs==19.3.0
 black @ git+https://github.com/psf/black.git@537ea8df35b1004bdb228b483907fb5dd92e5257
 click==7.1.2
 dj-database-url==0.5.0
-Django==3.0.7
+Django==3.0.14
 django-admin==2.0.1
 django-cors-headers==3.5.0
 django-excel-base==1.0.4
